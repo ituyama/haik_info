@@ -5,7 +5,24 @@ import json
 
 
 def haik_info(user_haiku):
+    """
+    与えられた俳句のリストを分析し、季語、読み、俳句のタイプ、各行の音節数を識別します。
 
+    Args:
+        haiku (list of str): 分析する俳句。音節ごとの配列。
+
+    Returns:
+        dict: 分析結果を含む辞書。以下のキーを持ちます:
+            - kigo (list of str): 季語のリスト。季語が見つからない場合は空のリスト。
+            - yomi (list of str): 各行の読みのリスト。
+            - type (str): 俳句のタイプ（例: 'haiku', 'senryu', 'tanka'）。
+            - len (list of int): 各行の音節数のリスト。
+
+    Example:
+        >>> user_haiku = ["古池", "蛙飛び込む", "水の音"]
+        >>> result = haik_info(user_haiku)
+        >>> print(result)
+    """
     # JSONデータを読み込む
     with open('kigo.json', 'r', encoding='utf-8') as f:
         kigo_data = json.load(f)
