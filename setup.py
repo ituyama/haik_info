@@ -4,7 +4,7 @@ import json
 # 関数のラップ
 
 
-def haiku_analysis(haiku):
+def haik_info(user_haiku):
 
     # JSONデータを読み込む
     with open('kigo.json', 'r', encoding='utf-8') as f:
@@ -79,7 +79,6 @@ def haiku_analysis(haiku):
         else:
             False
 
-    user_haiku = ["古池", "蛙飛び込む", "水の音"]
     # ユーザーから俳句を入力として受け取り、含まれている季語の配列を表示
     types, lens = check_len(user_haiku)
     found_kigo = {
@@ -93,7 +92,7 @@ def haiku_analysis(haiku):
 
 # setup.py の基本的な内容
 setup(
-    name='HaikuAnalysis',
+    name='haik_info',
     version='0.1',
     packages=find_packages(),
     install_requires=[
