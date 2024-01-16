@@ -1,6 +1,6 @@
-haik_info
+haikus
 
-haik_infoは、与えられた俳句から季語を識別し、その俳句の形式と構造を分析するPythonモジュールです。
+haikusは、与えられた俳句から季語を識別し、その俳句の形式と構造を分析するPythonモジュールです。
 機能
 
     季語の識別: 俳句に含まれる季語を識別します。
@@ -12,14 +12,14 @@ haik_infoは、与えられた俳句から季語を識別し、その俳句の�
 
 python
 
-from haiku_analysis import haiku_analysis
+from haikus import haikus
 
 次に、分析したい俳句をリスト形式で関数に渡します：
 
 python
 
 user_haiku = ["古池", "蛙飛び込む", "水の音"]
-result = haiku_analysis(user_haiku)
+result = haikus(user_haiku)
 print(result)
 
 依存関係
