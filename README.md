@@ -1,4 +1,5 @@
 haikus
+![image](https://github.com/ituyama/haikus/assets/42466955/4d26bbf1-e548-493a-88ec-f627ff65da27)
 
 haikusは、与えられた俳句から季語を識別し、その俳句の形式と構造を分析するPythonモジュールです。
 機能
